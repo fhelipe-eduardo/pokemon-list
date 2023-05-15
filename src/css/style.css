@@ -1,0 +1,110 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+header .logo,
+header .img-button {
+    width: 3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+header #theme-button {
+    background: transparent;
+    border: none;
+}
+
+header .logo:hover,
+header #theme-button:hover,
+main .card-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+main {
+    padding: 2.5rem;
+}
+
+main .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+main .card-pokemon {
+    background-color: #D8E3EC;
+    width: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+main .card-pokemon:hover {
+    background-color: #96E9E6;
+}
+
+.dark-mode .card-pokemon {
+    background-color: #A8A8A8;
+}
+
+main .card-pokemon .infos {
+    display: flex;
+    justify-content: space-between;
+    border: 0.1rem solid #333333;
+    border-radius: 1rem;
+}
+
+main .card-pokemon .infos span {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+main .card-pokemon .gif {
+    width: 9rem;
+    height: 9rem;
+}
+
+main .card-pokemon .types {
+    display: flex;
+    gap: 1.5rem;
+}
+
+main .card-pokemon .type {
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.grass {
+    background-color: #7AC74C;
+}
+
+.poison {
+    background-color: #DF67DDFB;
+}
+
+.fire {
+    background-color: #EE8130;
+}
+
+.water {
+    background-color: #6390F0;
+}
+
+.insect {
+    background-color: #A6B91A;
+}
+
+main .description {
+    max-height: 8rem;
+    overflow-y: scroll;
+    font-size: 1.4rem;
+    padding-right: 1rem;
+}
